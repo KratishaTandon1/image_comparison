@@ -1,0 +1,402 @@
+[
+  {
+    "user_id": "71274541",
+    "duration": 0.15,
+    "time_taken": 293.61,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 46.67
+  },
+  {
+    "user_id": "71538842",
+    "duration": 0.15,
+    "time_taken": 7.43,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 46.67
+  },
+  {
+    "user_id": "72666524",
+    "duration": 0.24,
+    "time_taken": 27.4,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 29.17
+  },
+  {
+    "user_id": "72754549",
+    "duration": 0.21,
+    "time_taken": 5.05,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 33.33
+  },
+  {
+    "user_id": "72749745",
+    "duration": 0.12,
+    "time_taken": 2734.31,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "73180954",
+    "duration": 0.12,
+    "time_taken": 5.35,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "73200183",
+    "duration": 0.24,
+    "time_taken": 4.42,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 29.17
+  },
+  {
+    "user_id": "73190851",
+    "duration": 0.12,
+    "time_taken": 3.49,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "73183993",
+    "duration": 0.15,
+    "time_taken": 8.76,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 46.67
+  },
+  {
+    "user_id": "73419668",
+    "duration": 0.12,
+    "time_taken": 3.8,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "73404488",
+    "duration": 0.12,
+    "time_taken": 4.55,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "73624506",
+    "duration": 0.24,
+    "time_taken": 8.29,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 29.17
+  },
+  {
+    "user_id": "71893159",
+    "duration": 0.15,
+    "time_taken": 6.59,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 46.67
+  },
+  {
+    "user_id": "72663064",
+    "duration": 0.12,
+    "time_taken": 13.87,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "72753037",
+    "duration": 0.24,
+    "time_taken": 64.6,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 29.17
+  },
+  {
+    "user_id": "72853640",
+    "duration": 0.12,
+    "time_taken": 8.45,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "72950253",
+    "duration": 0.12,
+    "time_taken": 1064.91,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "73625501",
+    "duration": 0.15,
+    "time_taken": 11.62,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 46.67
+  },
+  {
+    "user_id": "73627430",
+    "duration": 0.24,
+    "time_taken": 7.17,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 29.17
+  },
+  {
+    "user_id": "71419248",
+    "duration": 0.18,
+    "time_taken": 9.74,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 38.89
+  },
+  {
+    "user_id": "71413118",
+    "duration": 0.12,
+    "time_taken": 3.75,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "71418533",
+    "duration": 0.15,
+    "time_taken": 5.25,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 46.67
+  },
+  {
+    "user_id": "71484168",
+    "duration": 0.21,
+    "time_taken": 3.45,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 33.33
+  },
+  {
+    "user_id": "71537292",
+    "duration": 0.12,
+    "time_taken": 3.33,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "71603987",
+    "duration": 0.18,
+    "time_taken": 2.84,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 38.89
+  },
+  {
+    "user_id": "73387292",
+    "duration": 1.0,
+    "time_taken": 26.09,
+    "whisper_text": "\u0939\u0948 \u0932\u093f\u0916\u0928\u0947 \u0915\u093e \u0939\u0940",
+    "user_text": "\u0932\u093f\u0916\u0928\u0947 \u0915\u093e \u0939\u0940 \u0915\u093e\u092e \u0939\u0948 \u0930\u093e\u0907\u091f\u093f\u0902\u0917 \u0914\u0930 \u0915\u094d\u092f\u093e",
+    "segment_character_per_second": 27.0
+  },
+  {
+    "user_id": "71776995",
+    "duration": 0.12,
+    "time_taken": 2.73,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "71777012",
+    "duration": 0.24,
+    "time_taken": 6.63,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 29.17
+  },
+  {
+    "user_id": "72361233",
+    "duration": 0.12,
+    "time_taken": 7.62,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "72361294",
+    "duration": 0.12,
+    "time_taken": 3.17,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "72360869",
+    "duration": 0.24,
+    "time_taken": 8.01,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 29.17
+  },
+  {
+    "user_id": "75180667",
+    "duration": 1.0,
+    "time_taken": 32.18,
+    "whisper_text": "\u0939\u0948 \u0932\u093f\u0916\u0928\u0947 \u0915\u093e \u0939\u0940",
+    "user_text": "\u0932\u093f\u0916\u0928\u0947 \u0915\u093e \u0939\u0940 \u0915\u093e\u092e \u0939\u0948 \u0930\u093e\u0907\u091f\u093f\u0902\u0917 \u0914\u0930 \u0915\u094d\u092f\u093e",
+    "segment_character_per_second": 27.0
+  },
+  {
+    "user_id": "73635094",
+    "duration": 0.12,
+    "time_taken": 3.35,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "73649558",
+    "duration": 0.12,
+    "time_taken": 5.22,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "73858460",
+    "duration": 0.15,
+    "time_taken": 5.69,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 46.67
+  },
+  {
+    "user_id": "73839688",
+    "duration": 0.24,
+    "time_taken": 4.88,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 29.17
+  },
+  {
+    "user_id": "71038899",
+    "duration": 0.18,
+    "time_taken": 7.79,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 38.89
+  },
+  {
+    "user_id": "71038755",
+    "duration": 0.15,
+    "time_taken": 9.41,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 46.67
+  },
+  {
+    "user_id": "71356569",
+    "duration": 0.24,
+    "time_taken": 11.86,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 29.17
+  },
+  {
+    "user_id": "71485194",
+    "duration": 0.15,
+    "time_taken": 51.08,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 46.67
+  },
+  {
+    "user_id": "71598892",
+    "duration": 0.12,
+    "time_taken": 5.92,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "71893321",
+    "duration": 0.12,
+    "time_taken": 6.1,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "71889891",
+    "duration": 0.18,
+    "time_taken": 4.7,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 38.89
+  },
+  {
+    "user_id": "72272750",
+    "duration": 0.18,
+    "time_taken": 7071.01,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 38.89
+  },
+  {
+    "user_id": "72465876",
+    "duration": 0.15,
+    "time_taken": 5.59,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 46.67
+  },
+  {
+    "user_id": "72953620",
+    "duration": 0.15,
+    "time_taken": 6.73,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 46.67
+  },
+  {
+    "user_id": "73859118",
+    "duration": 0.12,
+    "time_taken": 10.83,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "73839414",
+    "duration": 0.12,
+    "time_taken": 8.14,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "71352370",
+    "duration": 0.24,
+    "time_taken": 4.32,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 29.17
+  },
+  {
+    "user_id": "71351907",
+    "duration": 0.27,
+    "time_taken": 3.83,
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 25.93
+  }
+]

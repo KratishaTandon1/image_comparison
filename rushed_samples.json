@@ -1,0 +1,452 @@
+[
+  {
+    "user_id": "71042339",
+    "duration": 0.51,
+    "time_taken": 1.79,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 13.73
+  },
+  {
+    "user_id": "71043955",
+    "duration": 0.48,
+    "time_taken": 1.83,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 14.58
+  },
+  {
+    "user_id": "71354037",
+    "duration": 0.51,
+    "time_taken": 1.85,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 13.73
+  },
+  {
+    "user_id": "71353502",
+    "duration": 0.15,
+    "time_taken": 1.75,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 46.67
+  },
+  {
+    "user_id": "71346632",
+    "duration": 0.63,
+    "time_taken": 1.78,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 11.11
+  },
+  {
+    "user_id": "71349067",
+    "duration": 0.39,
+    "time_taken": 1.67,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 17.95
+  },
+  {
+    "user_id": "71349158",
+    "duration": 0.48,
+    "time_taken": 1.71,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 14.58
+  },
+  {
+    "user_id": "71413624",
+    "duration": 0.21,
+    "time_taken": 1.95,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 33.33
+  },
+  {
+    "user_id": "71414740",
+    "duration": 0.15,
+    "time_taken": 1.93,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 46.67
+  },
+  {
+    "user_id": "71419462",
+    "duration": 0.6,
+    "time_taken": 1.94,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 11.67
+  },
+  {
+    "user_id": "71422275",
+    "duration": 0.42,
+    "time_taken": 1.86,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 16.67
+  },
+  {
+    "user_id": "71414135",
+    "duration": 0.63,
+    "time_taken": 1.77,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 11.11
+  },
+  {
+    "user_id": "71480736",
+    "duration": 0.12,
+    "time_taken": 1.97,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "71478280",
+    "duration": 0.51,
+    "time_taken": 1.99,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 13.73
+  },
+  {
+    "user_id": "71486655",
+    "duration": 0.15,
+    "time_taken": 1.82,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 46.67
+  },
+  {
+    "user_id": "71477957",
+    "duration": 0.42,
+    "time_taken": 1.98,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 16.67
+  },
+  {
+    "user_id": "71486406",
+    "duration": 0.39,
+    "time_taken": 1.83,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 17.95
+  },
+  {
+    "user_id": "71487417",
+    "duration": 0.18,
+    "time_taken": 1.88,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 38.89
+  },
+  {
+    "user_id": "71479475",
+    "duration": 0.12,
+    "time_taken": 1.78,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "71484454",
+    "duration": 0.27,
+    "time_taken": 1.87,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 25.93
+  },
+  {
+    "user_id": "71537306",
+    "duration": 0.18,
+    "time_taken": 1.84,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 38.89
+  },
+  {
+    "user_id": "71537316",
+    "duration": 0.12,
+    "time_taken": 1.81,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "71537334",
+    "duration": 0.12,
+    "time_taken": 1.74,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "71540804",
+    "duration": 0.48,
+    "time_taken": 1.98,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 14.58
+  },
+  {
+    "user_id": "71548125",
+    "duration": 0.36,
+    "time_taken": 1.97,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 19.44
+  },
+  {
+    "user_id": "71537839",
+    "duration": 0.12,
+    "time_taken": 1.94,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "71834197",
+    "duration": 0.15,
+    "time_taken": 1.86,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 46.67
+  },
+  {
+    "user_id": "71830615",
+    "duration": 0.36,
+    "time_taken": 1.95,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 19.44
+  },
+  {
+    "user_id": "72034703",
+    "duration": 0.63,
+    "time_taken": 1.89,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 11.11
+  },
+  {
+    "user_id": "72035271",
+    "duration": 0.21,
+    "time_taken": 1.99,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 33.33
+  },
+  {
+    "user_id": "72748877",
+    "duration": 0.3,
+    "time_taken": 1.94,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 23.33
+  },
+  {
+    "user_id": "72751678",
+    "duration": 0.48,
+    "time_taken": 1.89,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 14.58
+  },
+  {
+    "user_id": "73048725",
+    "duration": 0.12,
+    "time_taken": 1.79,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "73179961",
+    "duration": 0.45,
+    "time_taken": 1.96,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 15.56
+  },
+  {
+    "user_id": "73179324",
+    "duration": 0.24,
+    "time_taken": 1.93,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 29.17
+  },
+  {
+    "user_id": "73176921",
+    "duration": 0.33,
+    "time_taken": 1.98,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 21.21
+  },
+  {
+    "user_id": "73412125",
+    "duration": 1.86,
+    "time_taken": 1.96,
+    "is_edited": "Yes",
+    "whisper_text": " \u092a\u094d\u0930\u0938\u094d\u0924\u0941\u0924\u093f \u092a\u094d\u0930\u0938\u094d\u0924\u0941\u0924\u093f",
+    "user_text": "[blank]",
+    "segment_character_per_second": 3.76
+  },
+  {
+    "user_id": "73412154",
+    "duration": 0.12,
+    "time_taken": 1.82,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "73396316",
+    "duration": 0.39,
+    "time_taken": 1.98,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 17.95
+  },
+  {
+    "user_id": "73410396",
+    "duration": 0.12,
+    "time_taken": 1.93,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "73413980",
+    "duration": 1.17,
+    "time_taken": 1.77,
+    "is_edited": "Yes",
+    "whisper_text": " \u092a\u094d\u0930\u0924\u093f\u092f\u094b\u0902 \u0915\u094b \u092a\u094d\u0930\u0924\u093f\u092f\u094b\u0902 \u0915\u094b \u092a\u094d\u0930\u0924\u093f\u092f\u094b\u0902 \u0915\u094b \u092a\u094d\u0930\u0924\u093f\u092f\u094b\u0902 \u0915\u094b \u092a\u094d\u0930\u0924\u093f\u092f\u094b\u0902 \u0915\u094b \u092a\u094d\u0930\u0924\u093f\u092f\u094b\u0902 \u0915\u094b \u092a\u094d\u0930\u0924\u093f\u092f\u094b\u0902 \u0915\u094b \u092a\u094d\u0930\u0924\u093f\u092f\u094b\u0902 \u0915\u094b \u092a\u094d\u0930\u0924\u093f\u092f\u094b\u0902 \u0915\u094b \u092a\u094d\u0930\u0924\u093f\u092f\u094b\u0902 \u0915\u094b \u092a\u094d\u0930\u0924\u093f\u092f\u094b\u0902 \u0915\u094b \u092a\u094d\u0930\u0924\u093f\u092f\u094b\u0902 \u0915\u094b \u092a\u094d\u0930\u0924\u093f\u092f\u094b\u0902 \u0915\u094b \u092a\u094d\u0930\u0924\u093f\u092f\u094b\u0902 \u0915\u094b \u092a\u094d\u0930\u0924\u093f\u092f\u094b\u0902 \u0915\u094b \u092a\u094d\u0930\u0924\u093f\u092f\u094b\u0902 \u0915\u094b \u092a\u094d\u0930\u0924\u093f\u092f\u094b\u0902 \u0915\u094b \u092a\u094d\u0930\u0924\u093f\u092f\u094b\u0902 \u0915\u094b \u092a\u094d\u0930\u0924\u093f\u092f\u094b\u0902 \u0915\u094b \u092a\u094d\u0930\u0924\u093f\u092f\u094b\u0902 \u0915\u094b \u092a\u094d\u0930",
+    "user_text": "[blank]",
+    "segment_character_per_second": 5.98
+  },
+  {
+    "user_id": "73643039",
+    "duration": 0.39,
+    "time_taken": 1.96,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 17.95
+  },
+  {
+    "user_id": "73621511",
+    "duration": 0.42,
+    "time_taken": 1.94,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 16.67
+  },
+  {
+    "user_id": "73627959",
+    "duration": 0.33,
+    "time_taken": 1.76,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 21.21
+  },
+  {
+    "user_id": "73863676",
+    "duration": 0.12,
+    "time_taken": 1.86,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "73863698",
+    "duration": 0.21,
+    "time_taken": 1.74,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 33.33
+  },
+  {
+    "user_id": "73861328",
+    "duration": 0.12,
+    "time_taken": 1.96,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 58.33
+  },
+  {
+    "user_id": "73858606",
+    "duration": 2.01,
+    "time_taken": 1.89,
+    "is_edited": "Yes",
+    "whisper_text": " \u092a\u094d\u0930\u0938\u094d\u0924\u0941\u0924\u093f \u092a\u094d\u0930\u0938\u094d\u0924\u0941\u0924\u093f",
+    "user_text": "[blank]",
+    "segment_character_per_second": 3.48
+  },
+  {
+    "user_id": "73858628",
+    "duration": 0.24,
+    "time_taken": 1.89,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 29.17
+  },
+  {
+    "user_id": "73854679",
+    "duration": 0.33,
+    "time_taken": 1.95,
+    "is_edited": "Yes",
+    "whisper_text": "",
+    "user_text": "[blank]",
+    "segment_character_per_second": 21.21
+  }
+]
