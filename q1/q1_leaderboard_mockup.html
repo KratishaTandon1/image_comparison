@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Talks AI - Indic Image Evaluation Leaderboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0a0c10;
+            --card-dark: #121620;
+            --accent-primary: #ff5e3a; /* Josh Talks Coral orange */
+            --accent-secondary: #ff9b26;
+            --text-main: #f0f2f5;
+            --text-muted: #8b949e;
+            --border-color: rgba(255, 255, 255, 0.08);
+            --gradient-accent: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+            --glass-bg: rgba(18, 22, 32, 0.7);
+            --glass-blur: blur(12px);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Outfit', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            min-height: 100vh;
+            padding: 2rem;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(255, 94, 58, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(255, 155, 38, 0.05) 0%, transparent 45%);
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1.5rem;
+        }
+
+        .logo-section h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-section p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            margin-top: 4px;
+        }
+
+        .meta-pills {
+            display: flex;
+            gap: 0.8rem;
+        }
+
+        .pill {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border-color);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .pill span {
+            width: 8px;
+            height: 8px;
+            background-color: #2ea44f;
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 8px #2ea44f;
+        }
+
+        /* Dashboard Grid Layout */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 1024px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Card Base */
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1.8rem;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .glass-card:hover {
+            box-shadow: 0 8px 32px 0 rgba(255, 94, 58, 0.05);
+        }
+
+        /* Left Side: Leaderboard & Stats */
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .leaderboard-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .leaderboard-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1rem 1.2rem;
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .leaderboard-item:hover {
+            background: rgba(255, 255, 255, 0.04);
+            border-color: rgba(255, 94, 58, 0.3);
+            transform: translateX(4px);
+        }
+
+        .leaderboard-item.rank-1::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--gradient-accent);
+        }
+
+        .model-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .rank-badge {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            width: 28px;
+            text-align: center;
+        }
+
+        .rank-1 .rank-badge { color: #ffd700; }
+        .rank-2 .rank-badge { color: #c0c0c0; }
+        .rank-3 .rank-badge { color: #cd7f32; }
+
+        .model-details h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
+
+        .model-details p {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .score-display {
+            text-align: right;
+        }
+
+        .score-val {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .score-max {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* Participant Stats */
+        .demographics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .stat-box {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-color);
+            padding: 1rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .stat-box h4 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-primary);
+        }
+
+        .stat-box p {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* Right Side: Interactive Playground */
+        .prompt-selector {
+            display: flex;
+            gap: 0.8rem;
+            margin-bottom: 2rem;
+            overflow-x: auto;
+            padding-bottom: 0.5rem;
+        }
+
+        .prompt-tab {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            padding: 0.8rem 1.2rem;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.2s ease;
+        }
+
+        .prompt-tab:hover {
+            color: var(--text-main);
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .prompt-tab.active {
+            background: var(--gradient-accent);
+            color: #fff;
+            border-color: transparent;
+            box-shadow: 0 4px 15px rgba(255, 94, 58, 0.2);
+        }
+
+        .active-prompt-display {
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px dashed rgba(255, 94, 58, 0.2);
+            padding: 1rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+            color: #ffb89a;
+            line-height: 1.5;
+        }
+
+        /* Comparison Cards Grid */
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .image-card {
+            background: rgba(255, 255, 255, 0.01);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .image-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255, 94, 58, 0.2);
+        }
+
+        .card-header {
+            padding: 0.8rem 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .model-name {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .model-badge {
+            font-size: 0.75rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background: rgba(255, 94, 58, 0.15);
+            color: var(--accent-secondary);
+        }
+
+        /* Dynamic Image Rendering */
+        .image-container {
+            height: 220px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+            background: #161b22;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .render-eval {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+            backdrop-filter: blur(4px);
+        }
+
+        .render-pass { background: rgba(46, 164, 79, 0.85); color: #fff; }
+        .render-warn { background: rgba(210, 153, 34, 0.85); color: #fff; }
+        .render-fail { background: rgba(248, 81, 73, 0.85); color: #fff; }
+
+        .card-body {
+            padding: 1.2rem;
+        }
+
+        .metric-bar-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .metric-bar-container {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .metric-label-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .bar-bg {
+            height: 6px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            background: var(--gradient-accent);
+            border-radius: 10px;
+            transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .model-caption {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 10px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-section">
+                <h1>Josh Talks AI</h1>
+                <p>Indic Text-to-Image Evaluation Playground</p>
+            </div>
+            <div class="meta-pills">
+                <div class="pill"><span></span>Live Eval Platform</div>
+                <div class="pill">Kirana Festive Use Case</div>
+            </div>
+        </header>
+
+        <div class="dashboard-grid">
+            <!-- Left Panel: Leaderboard & Meta -->
+            <div style="display: flex; flex-direction: column; gap: 2rem;">
+                <div class="glass-card">
+                    <h2 class="section-title">Overall Leaderboard</h2>
+                    <div class="leaderboard-list">
+                        <!-- Rank 1 -->
+                        <div class="leaderboard-item rank-1">
+                            <div class="model-info">
+                                <div class="rank-badge">01</div>
+                                <div class="model-details">
+                                    <h3>Gemini 3.1 Flash Preview</h3>
+                                    <p>Google • Best Cultural Accuracy</p>
+                                </div>
+                            </div>
+                            <div class="score-display">
+                                <span class="score-val" id="score-g31">8.9</span><span class="score-max">/10</span>
+                            </div>
+                        </div>
+
+                        <!-- Rank 2 -->
+                        <div class="leaderboard-item rank-2">
+                            <div class="model-info">
+                                <div class="rank-badge">02</div>
+                                <div class="model-details">
+                                    <h3>OpenAI DALL-E 3</h3>
+                                    <p>OpenAI • Best Text Rendering</p>
+                                </div>
+                            </div>
+                            <div class="score-display">
+                                <span class="score-val" id="score-dalle">8.5</span><span class="score-max">/10</span>
+                            </div>
+                        </div>
+
+                        <!-- Rank 3 -->
+                        <div class="leaderboard-item rank-3">
+                            <div class="model-info">
+                                <div class="rank-badge">03</div>
+                                <div class="model-details">
+                                    <h3>Gemini 2.5 Flash</h3>
+                                    <p>Google • Fast, Lower Script Detail</p>
+                                </div>
+                            </div>
+                            <div class="score-display">
+                                <span class="score-val" id="score-g25">7.2</span><span class="score-max">/10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card">
+                    <h2 class="section-title">Evaluation Summary</h2>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">
+                        This focused evaluation gathers human ratings on image fidelity, text rendering, and cultural appropriateness for Indic retail usecases.
+                    </p>
+                    <div class="demographics-grid">
+                        <div class="stat-box">
+                            <h4>8</h4>
+                            <p>Human Raters</p>
+                        </div>
+                        <div class="stat-box">
+                            <h4>3</h4>
+                            <p>Prompts Tested</p>
+                        </div>
+                        <div class="stat-box">
+                            <h4>100%</h4>
+                            <p>Consent Signed</p>
+                        </div>
+                        <div class="stat-box">
+                            <h4>24+</h4>
+                            <p>Total Evaluations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel: Interactive Playground -->
+            <div class="glass-card">
+                <h2 class="section-title">Prompt & Outputs Playground</h2>
+                
+                <div class="prompt-selector">
+                    <button class="prompt-tab active" onclick="switchPrompt(0)">01. Festive Kirana Sale</button>
+                    <button class="prompt-tab" onclick="switchPrompt(1)">02. Local Chai stall</button>
+                    <button class="prompt-tab" onclick="switchPrompt(2)">03. Regional Food Banner</button>
+                </div>
+
+                <div class="active-prompt-display" id="prompt-text">
+                    "A vibrant promotional poster for an Indian Kirana shop celebrating Diwali. At the top, bold Hinglish text reads 'DIWALI SPECIAL OFFER'. At the bottom, Devanagari text reads 'किराना स्टोर: 50% छूट'. Show beautifully arranged laddoos, lit clay diyas, and warm hanging lights."
+                </div>
+
+                <div class="comparison-grid">
+                    <!-- Card 1: Gemini 3.1 -->
+                    <div class="image-card">
+                        <div class="card-header">
+                            <span class="model-name">Gemini 3.1 Preview</span>
+                            <span class="model-badge">Rank 1</span>
+                        </div>
+                        <div class="image-container">
+                            <img id="img-g31" src="images/g31_diwali.png" alt="Gemini 3.1 Output">
+                            <span class="render-eval render-pass" id="txt-g31">Devanagari: Perfect (9/10)</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="metric-bar-group">
+                                <div class="metric-bar-container">
+                                    <div class="metric-label-row"><span>Text Legibility</span><span id="metric-g31-txt">88%</span></div>
+                                    <div class="bar-bg"><div class="bar-fill" id="bar-g31-txt" style="width: 88%;"></div></div>
+                                </div>
+                                <div class="metric-bar-container">
+                                    <div class="metric-label-row"><span>Cultural Authenticity</span><span id="metric-g31-cul">92%</span></div>
+                                    <div class="bar-bg"><div class="bar-fill" id="bar-g31-cul" style="width: 92%;"></div></div>
+                                </div>
+                            </div>
+                            <p class="model-caption" id="cap-g31">Beautiful lit diyas, highly accurate sweets representation.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: DALL-E 3 -->
+                    <div class="image-card">
+                        <div class="card-header">
+                            <span class="model-name">DALL-E 3</span>
+                            <span class="model-badge">Rank 2</span>
+                        </div>
+                        <div class="image-container">
+                            <img id="img-dalle" src="images/dalle_diwali.png" alt="DALL-E 3 Output">
+                            <span class="render-eval render-pass" id="txt-dalle">Devanagari: Good (8/10)</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="metric-bar-group">
+                                <div class="metric-bar-container">
+                                    <div class="metric-label-row"><span>Text Legibility</span><span id="metric-dalle-txt">94%</span></div>
+                                    <div class="bar-bg"><div class="bar-fill" id="bar-dalle-txt" style="width: 94%;"></div></div>
+                                </div>
+                                <div class="metric-bar-container">
+                                    <div class="metric-label-row"><span>Cultural Authenticity</span><span id="metric-dalle-cul">76%</span></div>
+                                    <div class="bar-bg"><div class="bar-fill" id="bar-dalle-cul" style="width: 76%;"></div></div>
+                                </div>
+                            </div>
+                            <p class="model-caption" id="cap-dalle">Text renders cleanly, sweets look slightly westernized.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Gemini 2.5 -->
+                    <div class="image-card">
+                        <div class="card-header">
+                            <span class="model-name">Gemini 2.5 Flash</span>
+                            <span class="model-badge">Rank 3</span>
+                        </div>
+                        <div class="image-container">
+                            <img id="img-g25" src="images/g25_diwali.png" alt="Gemini 2.5 Output">
+                            <span class="render-eval render-fail" id="txt-g25">Devanagari: Bad (5/10)</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="metric-bar-group">
+                                <div class="metric-bar-container">
+                                    <div class="metric-label-row"><span>Text Legibility</span><span id="metric-g25-txt">65%</span></div>
+                                    <div class="bar-bg"><div class="bar-fill" id="bar-g25-txt" style="width: 65%;"></div></div>
+                                </div>
+                                <div class="metric-bar-container">
+                                    <div class="metric-label-row"><span>Cultural Authenticity</span><span id="metric-g25-cul">70%</span></div>
+                                    <div class="bar-bg"><div class="bar-fill" id="bar-g25-cul" style="width: 70%;"></div></div>
+                                </div>
+                            </div>
+                            <p class="model-caption" id="cap-g25">Text has spelling errors, diyas look distorted.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const promptData = [
+            {
+                text: `"A vibrant promotional poster for an Indian Kirana shop celebrating Diwali. At the top, bold Hinglish text reads 'DIWALI SPECIAL OFFER'. At the bottom, Devanagari text reads 'किराना स्टोर: 50% छूट'. Show beautifully arranged laddoos, lit clay diyas, and warm hanging lights."`,
+                g31Score: 8.9, dalleScore: 8.5, g25Score: 7.2,
+                g31txt: "88%", g31cul: "92%", g31status: "Devanagari: Perfect (9/10)", g31cap: "Beautiful lit diyas, highly accurate sweets representation.",
+                dalletxt: "94%", dallecul: "76%", dallestatus: "Devanagari: Good (8/10)", dallecap: "Text renders cleanly, sweets look slightly westernized.",
+                g25txt: "65%", g25cul: "70%", g25status: "Devanagari: Bad (5/10)", g25cap: "Text has spelling errors, diyas look distorted.",
+                g31img: "images/g31_diwali.png", dalleimg: "images/dalle_diwali.png", g25img: "images/g25_diwali.png"
+            },
+            {
+                text: `"A branding social media banner for 'RAJU KI CHAI'. Show a warm evening scene at an Indian roadside tea stall. A kettle pouring hot steaming tea into small cutting glass cups. Text on a hanging wooden board reads 'RAJU KI CHAI' in English and 'चाय और समोसा' in clean Devanagari script."`,
+                g31Score: 9.1, dalleScore: 8.8, g25Score: 6.8,
+                g31txt: "92%", g31cul: "95%", g31status: "Devanagari: Perfect (9/10)", g31cap: "Highly authentic tea glasses and background details.",
+                dalletxt: "96%", dallecul: "80%", dallestatus: "Devanagari: Perfect (9/10)", dallecap: "Modern vector aesthetic, very legible Devanagari script.",
+                g25txt: "58%", g25cul: "72%", g25status: "Devanagari: Distorted (4/10)", g25cap: "Devanagari characters are scrambled and overlapping.",
+                g31img: "images/g31_chai.png", dalleimg: "images/dalle_chai.png", g25img: "images/g25_chai.png"
+            },
+            {
+                text: `"A banner for an Indian street food stall selling Samosas. Highlighting a pile of fresh golden-fried samosas, mint chutney, and tamarind chutney. Prominent bold text at the top reads 'HOT & FRESH SAMOSAS' and in Hindi 'गर्मा-गर्म समोसे'."`,
+                g31Score: 8.7, dalleScore: 8.2, g25Score: 7.5,
+                g31txt: "85%", g31cul: "90%", g31status: "Devanagari: Good (8/10)", g31cap: "Realistic crispy samosas with delicious mint chutney.",
+                dalletxt: "92%", dallecul: "70%", dallestatus: "Devanagari: Good (8/10)", dallecap: "Clean flat color styling, samosas look standard.",
+                g25txt: "72%", g25cul: "78%", g25status: "Devanagari: OK (7/10)", g25cap: "Decent visual, but font spacing has minor glitches.",
+                g31img: "images/g31_samosa.png", dalleimg: "images/dalle_samosa.png", g25img: "images/g25_samosa.png"
+            }
+        ];
+
+        function switchPrompt(index) {
+            // Update active tab styling
+            const tabs = document.querySelectorAll('.prompt-tab');
+            tabs.forEach((tab, i) => {
+                if (i === index) tab.classList.add('active');
+                else tab.classList.remove('active');
+            });
+
+            const data = promptData[index];
+            
+            // Update prompt text
+            document.getElementById('prompt-text').innerText = data.text;
+
+            // Update images
+            document.getElementById('img-g31').src = data.g31img;
+            document.getElementById('img-dalle').src = data.dalleimg;
+            document.getElementById('img-g25').src = data.g25img;
+
+            // Update scores
+            document.getElementById('score-g31').innerText = data.g31Score;
+            document.getElementById('score-dalle').innerText = data.dalleScore;
+            document.getElementById('score-g25').innerText = data.g25Score;
+
+            // Update text evaluations
+            document.getElementById('txt-g31').innerText = data.g31status;
+            document.getElementById('txt-dalle').innerText = data.dallestatus;
+            document.getElementById('txt-g25').innerText = data.g25status;
+
+            if (data.g25status.includes("Bad") || data.g25status.includes("Distorted")) {
+                document.getElementById('txt-g25').className = "render-eval render-fail";
+            } else {
+                document.getElementById('txt-g25').className = "render-eval render-warn";
+            }
+
+            // Update Captions
+            document.getElementById('cap-g31').innerText = data.g31cap;
+            document.getElementById('cap-dalle').innerText = data.dallecap;
+            document.getElementById('cap-g25').innerText = data.g25cap;
+
+            // Update progress bars & percentages
+            document.getElementById('metric-g31-txt').innerText = data.g31txt;
+            document.getElementById('bar-g31-txt').style.width = data.g31txt;
+            document.getElementById('metric-g31-cul').innerText = data.g31cul;
+            document.getElementById('bar-g31-cul').style.width = data.g31cul;
+
+            document.getElementById('metric-dalle-txt').innerText = data.dalletxt;
+            document.getElementById('bar-dalle-txt').style.width = data.dalletxt;
+            document.getElementById('metric-dalle-cul').innerText = data.dallecul;
+            document.getElementById('bar-dalle-cul').style.width = data.dallecul;
+
+            document.getElementById('metric-g25-txt').innerText = data.g25txt;
+            document.getElementById('bar-g25-txt').style.width = data.g25txt;
+            document.getElementById('metric-g25-cul').innerText = data.g25cul;
+            document.getElementById('bar-g25-cul').style.width = data.g25cul;
+        }
+    </script>
+</body>
+</html>
