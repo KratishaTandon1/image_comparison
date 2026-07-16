@@ -1,8 +1,8 @@
 import csv
 from collections import defaultdict
 
-def analyze_cheating_patterns(csv_path="../transcription_data.csv"):
-    # Since we moved this file to the q2/ subdirectory, the CSV is in the parent directory
+def analyze_cheating_patterns(csv_path="transcription_data.csv"):
+    # The raw dataset is placed in the same q2/ directory for packaging and verification
     print(f"Reading dataset from: {csv_path}")
     print("Starting data analysis... This might take 10-15 seconds for 51k rows.")
     

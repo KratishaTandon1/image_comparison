@@ -1,0 +1,13 @@
+# General Python ignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Temporary exploration scripts
+scratch/
+
+# Personal Data (PII) Protection
+# The raw screenshots PDF contains actual WhatsApp profiles, names, and contact details
+# Ignore this from the public repository (it will still be bundled in your offline zip submission)
+q1/participants/consent_proof.pdf

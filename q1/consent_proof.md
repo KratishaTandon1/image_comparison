@@ -20,11 +20,12 @@ Consent was collected directly from participants via verified digital messaging 
 
 | Rater ID | Participant Name | Email Address | Consent Status | Verification Method | Verification Status |
 | :---: | :--- | :--- | :---: | :--- | :---: |
-| **R01** | Prakhar Tandon | prakhartandon9898@gmail.com | **Yes** | WhatsApp Confirmation | **Verified** |
-| **R02** | Dived Mishra | mishradived@gmail.com | **Yes** | WhatsApp Confirmation | **Verified** |
-| **R03** | Sanjay Tandon | sanjaytandon7417@gmail.com | **Yes** | WhatsApp Confirmation | **Verified** |
-| **R04** | Ayush Varshney | Vayush2134@gmail.com | **Yes** | WhatsApp Confirmation | **Verified** |
-| **R05** | Himanshu Kashyap | kashyapkeshav84@gmail.com | **Yes** | WhatsApp Confirmation | **Verified** |
-| **R06** | Lakshay Garg | garglakshya00@gmail.com | **Yes** | WhatsApp Confirmation | **Verified** |
-| **R07** | Dhruv Singhal | dhruvsinghal2021@gmail.com | **Yes** | WhatsApp Confirmation | **Verified** |
-| **R08** | Arya Parashar | aryaparashar@gmail.com | **Yes** | WhatsApp Confirmation | **Verified** |
+| **R01** | Prakhar Tandon | prakhar*****@gmail.com | **Yes** | WhatsApp Confirmation | **Verified** |
+| **R02** | Dived Mishra | mishra*****@gmail.com | **Yes** | WhatsApp Confirmation | **Verified** |
+| **R03** | Sanjay Tandon | sanjay*****@gmail.com | **Yes** | WhatsApp Confirmation | **Verified** |
+| **R04** | Ayush Varshney | Vayush*****@gmail.com | **Yes** | WhatsApp Confirmation | **Verified** |
+| **R05** | Himanshu Kashyap | kashyap*****@gmail.com | **Yes** | WhatsApp Confirmation | **Verified** |
+| **R06** | Lakshay Garg | garglak*****@gmail.com | **Yes** | WhatsApp Confirmation | **Verified** |
+| **R07** | Dhruv Singhal | dhruvs*****@gmail.com | **Yes** | WhatsApp Confirmation | **Verified** |
+| **R08** | Arya Parashar | aryap*****@gmail.com | **Yes** | WhatsApp Confirmation | **Verified** |
+

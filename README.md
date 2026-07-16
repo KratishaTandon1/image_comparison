@@ -19,20 +19,20 @@ This repository contains the deliverables and codebase for the **Josh Talks AI P
 │   ├── prompts.md                # Human-readable markdown log of prompts, models, and settings
 │   ├── consent_proof.md          # Consent proof, agreement statement, and verification logs
 │   └── participants/             # Verified consent records
-│       ├── consent_proof.pdf     # PDF of compiled WhatsApp consent screenshots
+│       ├── consent_proof.pdf     # PDF of compiled WhatsApp consent screenshots (ignored via .gitignore for PII privacy)
 │       └── participants.csv      # CSV sheet listing rater names, redacted emails, and actual ages
 │
 ├── q2/                           # Question 2: Transcriber Quality Analysis
 │   ├── q2_data_analysis.py       # Python detection script (processing 51k rows)
 │   ├── q2_recommendations.md     # Engineering recommendations & safety guards
+│   ├── transcription_data.csv    # Large 23MB raw transcriber dataset
 │   └── flagged_transcribers.csv  # Output list of 3,569 flagged cheating users
 │
 ├── scratch/                      # Loose scratch exploration scripts
 │
 ├── final_report.md               # Main deliverable (Q1 & Q2 answers + reflection)
 ├── one_page_report.md            # 1-page Executive Summary
-├── video_script.md               # Word-for-word 2-minute video walkthrough script
-└── transcription_data.csv        # Large 23MB raw transcriber dataset
+└── video_script.md               # Word-for-word 2-minute video walkthrough script
 ```
 
 ---
