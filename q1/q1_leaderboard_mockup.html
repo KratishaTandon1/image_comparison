@@ -445,7 +445,7 @@
                                 </div>
                             </div>
                             <div class="score-display">
-                                <span class="score-val" id="score-g31">8.9</span><span class="score-max">/10</span>
+                                <span class="score-val" id="score-g31">8.89</span><span class="score-max">/10</span>
                             </div>
                         </div>
 
@@ -459,7 +459,7 @@
                                 </div>
                             </div>
                             <div class="score-display">
-                                <span class="score-val" id="score-dalle">8.5</span><span class="score-max">/10</span>
+                                <span class="score-val" id="score-dalle">8.49</span><span class="score-max">/10</span>
                             </div>
                         </div>
 
@@ -473,7 +473,7 @@
                                 </div>
                             </div>
                             <div class="score-display">
-                                <span class="score-val" id="score-g25">7.2</span><span class="score-max">/10</span>
+                                <span class="score-val" id="score-g25">6.95</span><span class="score-max">/10</span>
                             </div>
                         </div>
                     </div>
@@ -490,7 +490,7 @@
                             <p>Human Raters</p>
                         </div>
                         <div class="stat-box">
-                            <h4>3</h4>
+                            <h4>4</h4>
                             <p>Prompts Tested</p>
                         </div>
                         <div class="stat-box">
@@ -498,7 +498,7 @@
                             <p>Consent Signed</p>
                         </div>
                         <div class="stat-box">
-                            <h4>24+</h4>
+                            <h4>32+</h4>
                             <p>Total Evaluations</p>
                         </div>
                     </div>
@@ -513,6 +513,7 @@
                     <button class="prompt-tab active" onclick="switchPrompt(0)">01. Festive Kirana Sale</button>
                     <button class="prompt-tab" onclick="switchPrompt(1)">02. Local Chai stall</button>
                     <button class="prompt-tab" onclick="switchPrompt(2)">03. Regional Food Banner</button>
+                    <button class="prompt-tab" onclick="switchPrompt(3)">04. South Indian Cafe (Tamil)</button>
                 </div>
 
                 <div class="active-prompt-display" id="prompt-text">
@@ -624,6 +625,14 @@
                 dalletxt: "92%", dallecul: "70%", dallestatus: "Devanagari: Good (8/10)", dallecap: "Clean flat color styling, samosas look standard.",
                 g25txt: "72%", g25cul: "78%", g25status: "Devanagari: OK (7/10)", g25cap: "Decent visual, but font spacing has minor glitches.",
                 g31img: "images/g31_samosa.png", dalleimg: "images/gpt_image_1_samosa.png", g25img: "images/g25_samosa.png"
+            },
+            {
+                text: `"A professional menu poster for a South Indian restaurant. Showing hot steaming idli, vada, and a cup of filter coffee. Bold text at the top reads 'HOT & FRESH SOUTH INDIAN DISHES' and in clean Tamil script 'அன்னபூர்ணா பவன்' (Annapoorna Bhavan). Authentic South Indian cafe ambiance."`,
+                g31Score: 8.8, dalleScore: 8.5, g25Score: 6.3,
+                g31txt: "85%", g31cul: "92%", g31status: "Tamil: Perfect (9/10)", g31cap: "Accurate Tamil typography, delicious idli/vada layout.",
+                dalletxt: "95%", dallecul: "75%", dallestatus: "Tamil: Good (8/10)", dallecap: "Clean vector shapes, Tamil letters printed correctly.",
+                g25txt: "45%", g25cul: "68%", g25status: "Tamil: Illegible (3/10)", g25cap: "Tamil characters are severely scrambled and unreadable.",
+                g31img: "images/g31_tamil.png", dalleimg: "images/gpt_image_1_tamil.png", g25img: "images/g25_tamil.png"
             }
         ];
 
@@ -655,7 +664,7 @@
             document.getElementById('txt-dalle').innerText = data.dallestatus;
             document.getElementById('txt-g25').innerText = data.g25status;
 
-            if (data.g25status.includes("Bad") || data.g25status.includes("Distorted")) {
+            if (data.g25status.includes("Bad") || data.g25status.includes("Distorted") || data.g25status.includes("Illegible")) {
                 document.getElementById('txt-g25').className = "render-eval render-fail";
             } else {
                 document.getElementById('txt-g25').className = "render-eval render-warn";

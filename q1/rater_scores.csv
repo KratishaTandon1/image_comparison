@@ -71,3 +71,27 @@ R08,33,M,Hyderabad (South),2,Local Chai Stall,Gemini 2.5 Flash,7,8,9,Yes
 R08,33,M,Hyderabad (South),3,Regional Samosa Banner,Gemini 3.1 Flash Preview,10,9,8,Yes
 R08,33,M,Hyderabad (South),3,Regional Samosa Banner,OpenAI GPT Image 1,9,8,9,Yes
 R08,33,M,Hyderabad (South),3,Regional Samosa Banner,Gemini 2.5 Flash,6,8,8,Yes
+R01,24,F,Delhi (North),4,South Indian Cafe Banner,Gemini 3.1 Flash Preview,9,10,8,Yes
+R01,24,F,Delhi (North),4,South Indian Cafe Banner,OpenAI GPT Image 1,9,8,9,Yes
+R01,24,F,Delhi (North),4,South Indian Cafe Banner,Gemini 2.5 Flash,5,7,7,Yes
+R02,28,M,Mumbai (West),4,South Indian Cafe Banner,Gemini 3.1 Flash Preview,8,9,8,Yes
+R02,28,M,Mumbai (West),4,South Indian Cafe Banner,OpenAI GPT Image 1,10,8,9,Yes
+R02,28,M,Mumbai (West),4,South Indian Cafe Banner,Gemini 2.5 Flash,4,7,8,Yes
+R03,31,F,Bangalore (South),4,South Indian Cafe Banner,Gemini 3.1 Flash Preview,9,9,8,Yes
+R03,31,F,Bangalore (South),4,South Indian Cafe Banner,OpenAI GPT Image 1,10,7,9,Yes
+R03,31,F,Bangalore (South),4,South Indian Cafe Banner,Gemini 2.5 Flash,5,7,7,Yes
+R04,22,M,Lucknow (North),4,South Indian Cafe Banner,Gemini 3.1 Flash Preview,9,10,9,Yes
+R04,22,M,Lucknow (North),4,South Indian Cafe Banner,OpenAI GPT Image 1,9,8,8,Yes
+R04,22,M,Lucknow (North),4,South Indian Cafe Banner,Gemini 2.5 Flash,4,7,7,Yes
+R05,35,M,Kolkata (East),4,South Indian Cafe Banner,Gemini 3.1 Flash Preview,9,9,8,Yes
+R05,35,M,Kolkata (East),4,South Indian Cafe Banner,OpenAI GPT Image 1,9,7,9,Yes
+R05,35,M,Kolkata (East),4,South Indian Cafe Banner,Gemini 2.5 Flash,5,7,8,Yes
+R06,27,F,Chennai (South),4,South Indian Cafe Banner,Gemini 3.1 Flash Preview,8,10,8,Yes
+R06,27,F,Chennai (South),4,South Indian Cafe Banner,OpenAI GPT Image 1,9,8,9,Yes
+R06,27,F,Chennai (South),4,South Indian Cafe Banner,Gemini 2.5 Flash,4,7,7,Yes
+R07,29,F,Pune (West),4,South Indian Cafe Banner,Gemini 3.1 Flash Preview,8,9,9,Yes
+R07,29,F,Pune (West),4,South Indian Cafe Banner,OpenAI GPT Image 1,9,8,9,Yes
+R07,29,F,Pune (West),4,South Indian Cafe Banner,Gemini 2.5 Flash,5,7,8,Yes
+R08,33,M,Hyderabad (South),4,South Indian Cafe Banner,Gemini 3.1 Flash Preview,9,9,8,Yes
+R08,33,M,Hyderabad (South),4,South Indian Cafe Banner,OpenAI GPT Image 1,9,7,8,Yes
+R08,33,M,Hyderabad (South),4,South Indian Cafe Banner,Gemini 2.5 Flash,4,7,7,Yes

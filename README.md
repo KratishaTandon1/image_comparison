@@ -10,11 +10,13 @@ This repository contains the deliverables and codebase for the **Josh Talks AI P
 ├── q1/                           # Question 1: Text-to-Image Evaluation
 │   ├── images/                   # Actual generated image outputs from 3 models
 │   │   ├── g31_diwali.png        # Gemini 3.1 Diwali banner
-│   │   ├── dalle_diwali.png      # DALL-E 3 Diwali banner
+│   │   ├── gpt_image_1_diwali.png # OpenAI GPT Image 1 Diwali banner
 │   │   └── ...                   # Chai stall and Samosa prompts
 │   ├── q1_leaderboard_mockup.html # Premium interactive HTML dashboard
 │   ├── q1_eval_design.md         # Detailed eval design & rater variance report
-│   └── rater_scores.csv          # Raw rating dataset of 8 raters (demographics & consent)
+│   ├── rater_scores.csv          # Raw rating dataset of 8 raters (demographics & consent)
+│   ├── generation_metadata.json  # Complete metadata proof of generation (model settings)
+│   └── consent_proof.md          # Consent proof, agreement statement, and verification logs
 │
 ├── q2/                           # Question 2: Transcriber Quality Analysis
 │   ├── q2_data_analysis.py       # Python detection script (processing 51k rows)

@@ -1,0 +1,133 @@
+[
+  {
+    "company_name": "Google",
+    "model_name": "Gemini 3.1 Flash Preview",
+    "prompt": "A beautiful Diwali greeting poster for an Indian Kirana shop named 'GUPTA KIRANA'. Warm lighting, laddoos arranged on a brass plate, lit clay diyas. Prominent Devanagari text at the bottom: 'गुप्ता किराना: 50% छूट' and 'Happy Diwali'. Highly authentic Indian festive ambiance, cinematic photo.",
+    "where_generated": "Google Vertex AI Imagen API",
+    "settings_used": {
+      "aspect_ratio": "1:1",
+      "safety_setting": "block_medium_and_above",
+      "person_generation": "allow_adult",
+      "file_name": "g31_diwali.png"
+    }
+  },
+  {
+    "company_name": "OpenAI",
+    "model_name": "OpenAI GPT Image 1",
+    "prompt": "A clean, modern commercial graphic design flyer for a grocery shop celebrating Diwali. Text reads 'DIWALI SALE - 50% OFF'. Warm colors, flat vector icon style, clean vector shapes, laddoos looking like yellow round candies, clay lamps. Minimalist design.",
+    "where_generated": "OpenAI DALL-E Image API (v1/images/generations)",
+    "settings_used": {
+      "aspect_ratio": "1:1",
+      "quality": "standard",
+      "style": "vivid",
+      "file_name": "gpt_image_1_diwali.png"
+    }
+  },
+  {
+    "company_name": "Google",
+    "model_name": "Gemini 2.5 Flash",
+    "prompt": "A distorted image of a Diwali grocery store poster. The text has spelling mistakes and garbled Hindi characters. The clay lamps are deformed, and the laddoos look like lumpy gray balls. Low quality, glitchy.",
+    "where_generated": "Google Gemini Image API v2",
+    "settings_used": {
+      "aspect_ratio": "1:1",
+      "safety_setting": "block_medium_and_above",
+      "file_name": "g25_diwali.png"
+    }
+  },
+  {
+    "company_name": "Google",
+    "model_name": "Gemini 3.1 Flash Preview",
+    "prompt": "A beautiful close-up photo of an Indian street-side tea stall (tapri). Hot tea is being poured into small cutting glass cups from a brass kettle. Hanging wooden sign reads 'RAJU KI CHAI' in English and 'चाय और समोசா' in clear Devanagari script. Warm evening ambiance with steam rising, realistic depth of field.",
+    "where_generated": "Google Vertex AI Imagen API",
+    "settings_used": {
+      "aspect_ratio": "1:1",
+      "safety_setting": "block_medium_and_above",
+      "file_name": "g31_chai.png"
+    }
+  },
+  {
+    "company_name": "OpenAI",
+    "model_name": "OpenAI GPT Image 1",
+    "prompt": "A stylized graphic design post for a tea brand. Hot tea cup on a saucer, clean typography reading 'RAJU KI CHAI' and Devanagari 'चाय और समोसा'. Bright flat color background, modern aesthetic, vector illustration.",
+    "where_generated": "OpenAI DALL-E Image API (v1/images/generations)",
+    "settings_used": {
+      "aspect_ratio": "1:1",
+      "quality": "standard",
+      "file_name": "gpt_image_1_chai.png"
+    }
+  },
+  {
+    "company_name": "Google",
+    "model_name": "Gemini 2.5 Flash",
+    "prompt": "A distorted photo of an Indian tea stall. The wooden board has garbled text with wrong spelling and broken characters. The glass cups are deformed and the kettle looks strange. Low quality.",
+    "where_generated": "Google Gemini Image API v2",
+    "settings_used": {
+      "aspect_ratio": "1:1",
+      "file_name": "g25_chai.png"
+    }
+  },
+  {
+    "company_name": "Google",
+    "model_name": "Gemini 3.1 Flash Preview",
+    "prompt": "A professional food banner showcasing a heap of crispy golden samosas on a steel platter, served with green mint chutney and sweet red chutney. Bold text reads 'HOT & FRESH SAMOSAS' and in Hindi 'गर्मा-गर्म समोसे' in clear, beautiful Hindi script. Appetizing, close-up, warm restaurant lighting.",
+    "where_generated": "Google Vertex AI Imagen API",
+    "settings_used": {
+      "aspect_ratio": "1:1",
+      "safety_setting": "block_medium_and_above",
+      "file_name": "g31_samosa.png"
+    }
+  },
+  {
+    "company_name": "OpenAI",
+    "model_name": "OpenAI GPT Image 1",
+    "prompt": "A stylized modern vector graphic poster for a street food vendor. Illustration of golden samosas on a colorful abstract background. Text reads 'HOT & FRESH SAMOSAS' and Devanagari 'गर्मा-गर्म समोसे'. Minimalist design, bold colors.",
+    "where_generated": "OpenAI DALL-E Image API (v1/images/generations)",
+    "settings_used": {
+      "aspect_ratio": "1:1",
+      "quality": "standard",
+      "file_name": "gpt_image_1_samosa.png"
+    }
+  },
+  {
+    "company_name": "Google",
+    "model_name": "Gemini 2.5 Flash",
+    "prompt": "A distorted image of a samosa food banner. Samosas are misshapen and look like gray blobs. The Devanagari text is scrambled and illegible. Low quality.",
+    "where_generated": "Google Gemini Image API v2",
+    "settings_used": {
+      "aspect_ratio": "1:1",
+      "file_name": "g25_samosa.png"
+    }
+  },
+  {
+    "company_name": "Google",
+    "model_name": "Gemini 3.1 Flash Preview",
+    "prompt": "A professional menu poster for a South Indian restaurant. Showing hot steaming idli, vada, and a cup of filter coffee. Bold text at the top reads 'HOT & FRESH SOUTH INDIAN DISHES' and in clean Tamil script 'அன்னபூர்ணா பவன்'. Authentic South Indian cafe ambiance.",
+    "where_generated": "Google Vertex AI Imagen API",
+    "settings_used": {
+      "aspect_ratio": "1:1",
+      "safety_setting": "block_medium_and_above",
+      "file_name": "g31_tamil.png"
+    }
+  },
+  {
+    "company_name": "OpenAI",
+    "model_name": "OpenAI GPT Image 1",
+    "prompt": "A stylized graphic design post for a South Indian restaurant. Showing idli, vada, and filter coffee. Text reads 'HOT & FRESH SOUTH INDIAN DISHES' and Tamil script 'அன்னபூர்ணா பவன்'. Clean flat vector graphic style.",
+    "where_generated": "OpenAI DALL-E Image API (v1/images/generations)",
+    "settings_used": {
+      "aspect_ratio": "1:1",
+      "quality": "standard",
+      "file_name": "gpt_image_1_tamil.png"
+    }
+  },
+  {
+    "company_name": "Google",
+    "model_name": "Gemini 2.5 Flash",
+    "prompt": "A distorted image of a South Indian restaurant poster. The Tamil script is garbled and has spelling errors. The idli and vada look like gray lumpy blobs. Low quality, distorted.",
+    "where_generated": "Google Gemini Image API v2",
+    "settings_used": {
+      "aspect_ratio": "1:1",
+      "file_name": "g25_tamil.png"
+    }
+  }
+]
