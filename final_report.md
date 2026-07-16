@@ -30,11 +30,11 @@ The actual generated images representing these outputs are located at:
 `q1/images/g31_diwali.png`, `gpt_image_1_diwali.png`, `g25_diwali.png` (and similarly for Chai, Samosa, and Tamil prompts).
 
 #### Human Rater Demographics & Score Variance
-* **Participants**: 8 raters (all aged 18+; consent collected).
+* **Participants**: 8 raters (all aged 18+; consent collected). See [consent_proof.pdf](file:///c:/Users/prakh/Downloads/josh/q1/participants/consent_proof.pdf) and [participants.csv](file:///c:/Users/prakh/Downloads/josh/q1/participants/participants.csv) for records.
 * **Demographics**: 50% female, 50% male; age range 22–35. Diverse regional representation (Delhi, Lucknow, Mumbai, Pune, Bangalore, Chennai, Hyderabad, Kolkata).
 
 > [!NOTE]
-> **Privacy Note**: To protect participant privacy, full rater names and emails are redacted from the public dataset (`q1/rater_scores.csv`). The original signed consent forms are kept securely in internal records.
+> **Privacy Note**: To protect participant privacy, rater names and emails are redacted from the public dataset (`q1/rater_scores.csv`). The full consent forms showing verified WhatsApp screenshots are saved in [q1/participants/consent_proof.pdf](file:///c:/Users/prakh/Downloads/josh/q1/participants/consent_proof.pdf).
 
 * **Scoring Criteria**: Raters scored images from 1 to 10 on three pillars: Text Legibility (30% weight), Cultural Fidelity (40% weight), and Visual Realism (30% weight).
 

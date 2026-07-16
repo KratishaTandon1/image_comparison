@@ -37,14 +37,14 @@ The generated image files representing these prompts are saved under:
 
 ## 4. Rater Demographics & Consent
 * **Rater Count**: 8 active participants.
-* **Consent**: 100% voluntary consent obtained via signature and checkbox verification.
+* **Consent**: 100% voluntary consent obtained. See [consent_proof.pdf](file:///c:/Users/prakh/Downloads/josh/q1/participants/consent_proof.pdf) and [participants.csv](file:///c:/Users/prakh/Downloads/josh/q1/participants/participants.csv) for records.
 * **Demographics**:
   * **Gender**: 4 Female (F), 4 Male (M).
   * **Age Spread**: 22 to 35 (Mean: 28.5 years).
   * **Region Representation**: Delhi (North), Lucknow (North), Mumbai (West), Pune (West), Bangalore (South), Chennai (South), Hyderabad (South), Kolkata (East). This guarantees assessment of diverse regional aesthetics and language script nuances.
 
 > [!NOTE]
-> **Privacy Disclaimer**: In compliance with personal data privacy guidelines, full rater names and email addresses have been redacted from the public dataset ([rater_scores.csv](file:///c:/Users/prakh/Downloads/josh/q1/rater_scores.csv)). The full signed consent forms (names, emails, dates) are archived internally in compliance with hiring task guidelines.
+> **Privacy Disclaimer**: In compliance with personal data privacy guidelines, rater names and email addresses have been redacted from the public dataset ([rater_scores.csv](file:///c:/Users/prakh/Downloads/josh/q1/rater_scores.csv)). The full consent forms showing verified WhatsApp screenshots are saved in [q1/participants/consent_proof.pdf](file:///c:/Users/prakh/Downloads/josh/q1/participants/consent_proof.pdf).
 
 The raw score sheet is saved in [rater_scores.csv](file:///c:/Users/prakh/Downloads/josh/q1/rater_scores.csv).
 

@@ -16,7 +16,11 @@ This repository contains the deliverables and codebase for the **Josh Talks AI P
 │   ├── q1_eval_design.md         # Detailed eval design & rater variance report
 │   ├── rater_scores.csv          # Raw rating dataset of 8 raters (demographics & consent)
 │   ├── generation_metadata.json  # Complete metadata proof of generation (model settings)
-│   └── consent_proof.md          # Consent proof, agreement statement, and verification logs
+│   ├── prompts.md                # Human-readable markdown log of prompts, models, and settings
+│   ├── consent_proof.md          # Consent proof, agreement statement, and verification logs
+│   └── participants/             # Verified consent records
+│       ├── consent_proof.pdf     # PDF of compiled WhatsApp consent screenshots
+│       └── participants.csv      # CSV sheet listing rater names, redacted emails, and actual ages
 │
 ├── q2/                           # Question 2: Transcriber Quality Analysis
 │   ├── q2_data_analysis.py       # Python detection script (processing 51k rows)
