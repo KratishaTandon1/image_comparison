@@ -5,9 +5,9 @@
 
 ## 1. Question 1: Text-to-Image Evaluation (Kirana Store Branding)
 * **Goal**: Evaluate text-to-image models on generating WhatsApp promotional flyers for local Indian Kirana stores during festivals (Diwali, Ganesh Chaturthi).
-* **Models Evaluated**: Gemini 3.1 Flash Preview, OpenAI DALL-E 3, Gemini 2.5 Flash.
-* **Key Finding**: **Gemini 3.1 Flash Preview** achieved the highest overall score of **8.79 / 10**, showcasing superior cultural accuracy (accurate clay diyas, traditional laddoos) over **DALL-E 3 (8.50 / 10)**. DALL-E 3 had the best spelling accuracy for Devanagari text but suffered from "Western bias" in visual details.
-* **Evidence Trail**: The evaluation is backed by **9 actual generated images** stored in `/q1/images/`, and a raw score sheet **`q1/rater_scores.csv`** containing individual ratings from **8 participants** with standard deviation calculations to show rating variance.
+* **Models Evaluated**: Gemini 3.1 Flash Preview, OpenAI GPT Image 1, Gemini 2.5 Flash.
+* **Key Finding**: **Gemini 3.1 Flash Preview** achieved the highest overall score of **8.79 / 10**, showcasing superior cultural accuracy (accurate clay diyas, traditional laddoos) over **OpenAI GPT Image 1 (8.50 / 10)**. GPT Image 1 had the best spelling accuracy for Devanagari text but suffered from "Western bias" in visual details.
+* **Evidence Trail**: The evaluation is backed by **9 actual generated images** stored in `/q1/images/`, and a raw score sheet **`q1/rater_scores.csv`** containing individual ratings from **8 participants** with standard deviation calculations to show rating variance. (Note: Names and emails redacted from CSV for PII compliance).
 
 ---
 
