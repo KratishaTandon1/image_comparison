@@ -54,4 +54,5 @@ This will parse `transcription_data.csv`, check for rushed minimal-edit submissi
 ### 3. Submission Documents
 * Read the **[final_report.md](file:///c:/Users/prakh/Downloads/josh/final_report.md)** for complete conceptual and data-backed answers.
 * Read the **[one_page_report.md](file:///c:/Users/prakh/Downloads/josh/one_page_report.md)** for a quick high-level summary of findings.
-* Read the **[video_script.md](file:///c:/Users/prakh/Downloads/josh/video_script.md)** to record your compulsory 2-minute video walk-through.
+* Read the **[video_script.md](file:///c:/Users/prakh/Downloads/josh/video_script.md)** for the walkthrough speaking script.
+* **Compulsory Video Walkthrough Link**: [Watch the 2-minute Loom Video Walkthrough](https://www.loom.com/share/b6c087e2b77e4d0ea658fab56b6d36d7)

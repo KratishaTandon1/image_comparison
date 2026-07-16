@@ -23,3 +23,5 @@
 2. **Safety Guards**: Implement a **minimum of 5 completed tasks** before trigger flags activate, and route users to `SUSPENDED_PENDING_AUDIT` (temporary hold) instead of auto-banning to handle false alarms (e.g. text-expanders, boilerplate text).
 3. **UX Prevention**: Disable the "Submit" button until the audio player reaches **80% playback duration**, forcing users to listen before editing.
 4. **Interactive Dashboard**: View the model comparison playground by opening the designed [q1/q1_leaderboard_mockup.html](file:///c:/Users/prakh/Downloads/josh/q1/q1_leaderboard_mockup.html) in your browser.
+5. **Compulsory Video Walkthrough Link**: [Watch the 2-minute Loom Video Walkthrough](https://www.loom.com/share/b6c087e2b77e4d0ea658fab56b6d36d7)
+
